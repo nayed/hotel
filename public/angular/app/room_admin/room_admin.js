@@ -29,7 +29,7 @@ angular.module('myApp.roomAdmin', [
     $scope.init()
 
     $scope.create = () => {
-        $http.post('/adminapi/room_type', $scope.new_type).success((date) => {
+        $http.post('/adminapi/room_type', $scope.new_type).success((data) => {
             $scope.room_types.push(data)
             $scope.new_type.name = ""
             $scope.new_type.short_name = ""
