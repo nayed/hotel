@@ -6,7 +6,8 @@ angular.module('myApp', [
   'myApp.view1',
   'myApp.view2',
   'myApp.version',
-  'myApp.roomAdmin'
+  'myApp.roomAdmin',
+  'myApp.book'
 ]).
 config(['$routeProvider', ($routeProvider) => {
   $routeProvider.otherwise({redirectTo: '/room_type'})

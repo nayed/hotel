@@ -21,3 +21,8 @@ Route::group(['prefix' => 'adminapi'], function()
 
     Route::post('setpriceinrange', 'RoomCalendarController@setPriceInRangeForRoomType');
 });
+
+Route::group(['prefix' => 'api'], function()
+{
+    Route::post('searchavailability', 'RoomCalendarController@searchAvailability');
+});
