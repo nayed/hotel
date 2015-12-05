@@ -25,4 +25,6 @@ Route::group(['prefix' => 'adminapi'], function()
 Route::group(['prefix' => 'api'], function()
 {
     Route::post('searchavailability', 'RoomCalendarController@searchAvailability');
+
+    Route::post('createreservation', 'ReservationController@createReservation');
 });
